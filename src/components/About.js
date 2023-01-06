@@ -14,7 +14,7 @@ const About = () => {
         <img src={logo} alt="roshan img "  width='200px'  style={{borderRadius:'20px', marginRight:'5rem'}} />
       </Box>
       }
-      <Box maxWidth='29px'>
+      <Box >
         <Typography variant='h3' style={{fontWeight:'900' , marginBottom:'1rem'}} >
           About me 
         </Typography>
