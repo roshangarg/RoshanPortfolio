@@ -40,16 +40,16 @@ const Footer = () => {
               </Typography>
             </Box>
             <Box>
-              <Typography variant="body2" style={{ marginBottom: "1rem" ,fontWeight:'700'}}>
+              <Typography variant="body2" style={{ marginBottom: "1rem" }}>
                 Street : Btm Layout 2nd stage{" "}
               </Typography>
-              <Typography variant="body2" style={{ marginBottom: "1rem" ,fontWeight:'700'}}>
+              <Typography variant="body2" style={{ marginBottom: "1rem" ,}}>
                 City : Bangalore{" "}
               </Typography>
-              <Typography variant="body2" style={{ marginBottom: "1rem",fontWeight:'700' }}>
+              <Typography variant="body2" style={{ marginBottom: "1rem", }}>
                 State : Karnataka
               </Typography>
-              <Typography variant="body2" style={{ marginBottom: "1rem" ,fontWeight:'700'}}>
+              <Typography variant="body2" style={{ marginBottom: "1rem" ,}}>
                 Phone no : +91- 8516913819
               </Typography>
             </Box>
@@ -62,7 +62,7 @@ const Footer = () => {
             </Box>
             <Box>
               {routes.map((item) => (
-                <Box key={item.path} style={{ marginBottom: "1rem" ,fontWeight:'700'}}>
+                <Box key={item.path} style={{ marginBottom: "1rem" ,}}>
                   <Link
                     style={{
                       color: "white",

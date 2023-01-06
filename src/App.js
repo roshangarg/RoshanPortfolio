@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
 import Project from "./components/Project";
+import Skills from "./components/Skills";
 import Layout from "./Layout";
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route exact path={"/navbar"} element={<Navbar/>}/>
           <Route exact path={"/contact"} element={<Contact/>}/>
           <Route exact path={"/project"} element={<Project/>}/>
+          <Route exact path={"/skills"} element={<Skills/>}/>
           <Route path="*" element={NotFound} />
          
           
