@@ -11,17 +11,17 @@ const Home = () => {
     <div >
      <div style={{width:'100%' , height:'92vh',display:'flex', alignContent:'center', alignItems:'center', justifyContent:'center'}}> 
            
-           <Typography variant='h6' style={{fontSize:'2rem',maxWidth:'80%', marginRight:'1rem' }} >
+           <Typography variant='h6' className='move' style={{fontSize:'2rem',maxWidth:'80%', marginRight:'1rem' }} >
             Hey there !! <br/> I'm ROSHAN GARG <br />
-            Web Developwer
+            Web Developer
            </Typography>
            {!matches && 
            
-           <Avatar src={logo} style={{ width:'120px', height:'130px', objectFit:'contain'}}/>}
+           <Avatar src={logo} className='move1' style={{ width:'120px', height:'130px', objectFit:'contain'}}/>}
            
-           {matches && 
-      <Box>
-        <img src={logo} alt="roshan img "  width='200px'  style={{borderRadius:'20px', marginRight:'5rem'}} />
+      { matches && 
+      <Box className='move1' >
+        <img src={logo} alt="roshan img "   width='200px'  style={{borderRadius:'20px', marginRight:'5rem'}} />
       </Box>
       }
            

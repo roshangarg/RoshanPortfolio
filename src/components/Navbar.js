@@ -19,6 +19,7 @@ import { Block } from '@material-ui/icons';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    height:'4rem'
   },
   title: {
     flexGrow: 1,
@@ -68,7 +69,7 @@ const Navbar = () => {
   ]
   return (
     <div className={classes.root}>
-    <AppBar elevation={0} style={{background:"rgba(2, 5, 14,0.5)"}} position="static">
+    <AppBar elevation={0} style={{background:"rgba(2, 5, 14,0.5)"}} position="fixed">
       <Toolbar>
         
         <Typography variant="h6" className={classes.title}>

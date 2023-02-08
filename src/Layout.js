@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { Container } from "@material-ui/core";
+import { Box, Container } from "@material-ui/core";
 const Layout = ({ children }) => {
   return (
     <main
@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
       }}
     >
       <Navbar />
+
       <Container>{children}</Container>
 
       <Footer />

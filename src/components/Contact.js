@@ -6,6 +6,11 @@ const Contact = () => {
   const [email,setEmail] = useState('')
   const [name, setName] = useState('')
   const [message,setMessage] = useState('')
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const data = {email , name , message }
+    console.log(data)
+  }
   return (
     <div
       style={{
@@ -46,7 +51,7 @@ const Contact = () => {
           fontSize="large"
           color="primary"
         />
-        <form action="mailto:roshangarg28@gmail.com" noValidate>
+        <form onSubmit={handleSubmit} noValidate> 
           <TextField type="text" fullWidth label="Name" variant="outlined" value={name}  onChange={(e)=>setName(e.target.value)} />
           <br />
           <br />
@@ -61,7 +66,7 @@ const Contact = () => {
           />
           <br />
           <br />
-          <TextField type="text" fullWidth label="Message" variant="outlined" rows={4}  multiline
+          <TextField type="text" fullWidth label="Message" variant="outlined" minRows={4}  multiline
            value={message} onChange={(e) => setMessage(e.target.value)}
           />
           <br />
