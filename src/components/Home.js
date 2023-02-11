@@ -4,6 +4,7 @@ import Contact from './Contact'
 import logo  from '../ROSHAN.jpeg'
 import Project from './Project'
 import About from './About'
+import Skills from './Skills'
 const Home = () => {
   const matches = useMediaQuery('(min-width:600px)');
   return (
@@ -29,7 +30,9 @@ const Home = () => {
       </div>
       <About/>
       <Project/>
+      <Skills/>
       <Contact/>
+     
 
     
       

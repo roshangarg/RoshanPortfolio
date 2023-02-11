@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../ROSHAN.jpeg";
 import resume from "../Roshan's Resume-4-1.pdf";
-import { Box, Typography, useMediaQuery } from "@material-ui/core";
+import { Box, Button, Typography, useMediaQuery } from "@material-ui/core";
 
 const About = () => {
  
@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div
       style={{
-        display: "flex",
+       
         margin: "3rem 1rem",
         width: "100%",
         // textAlign: "center",
@@ -40,10 +40,16 @@ const About = () => {
             field of web Development
           </b>
           <br />
-          <a href={resume} download>
-            Download Resume
-          </a>
+          
         </Typography>
+        <Box style={{marginTop:'1rem'}}>
+
+          <a href={resume} download = " Roshan Resume ">
+          <Button   variant="outlined" color="primary">
+      Download Resume 
+      </Button>
+          </a>
+          </Box>
       </Box>
     </div>
   );

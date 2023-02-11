@@ -43,18 +43,47 @@ const Skills = () => {
   return (
     <div style={{ margin: "2rem" }}>
       <Container>
-      <Box style={{display:'flex',width:'100%', alignItems:'center', textAlign:'center' , justifyContent:'center',color:'white' , marginBottom:'2rem'}}>
-                  <Typography variant="h5">Technical skills</Typography>
-                </Box>
+        <Box
+          style={{
+            display: "flex",
+            width: "100%",
+            alignItems: "center",
+            textAlign: "center",
+            justifyContent: "center",
+            color: "white",
+            marginBottom: "2rem",
+          }}
+        >
+          <Typography
+            variant="h3"
+            style={{ fontWeight: "900", marginBottom: "1rem" }}
+          >
+            Skills
+          </Typography>
+        </Box>
         <Grid container spacing={3}>
           {skill.map((item) => (
             <Grid item md={4} sm={6} xs={12}>
-              <Box style={{display:'flex' , background:'black', padding:'1rem' , borderRadius:'10px' ,  }}>
-                <Box style={{flex:'1'}}>
+              <Box
+                style={{
+                  display: "flex",
+                  background: "black",
+                  padding: "1rem",
+                  borderRadius: "10px",
+                }}
+              >
+                <Box style={{ flex: "1" }}>
                   <Typography variant="h5">{item.name}</Typography>
                 </Box>
-                <Box style={{display:'flex', alignItems:'center', textAlign:'center' , color:'white'}}>
-                  <Typography >{item.rating}</Typography>
+                <Box
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    textAlign: "center",
+                    color: "white",
+                  }}
+                >
+                  <Typography>{item.rating}</Typography>
                 </Box>
               </Box>
             </Grid>
