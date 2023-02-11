@@ -49,7 +49,7 @@ const Contact = () => {
           textAlign: "center",
           justifyContent: "center",
           padding: "2rem",
-          minWidth: "500px",
+         width:'70vw',
           color: "black",
           // width:'50%',
 
