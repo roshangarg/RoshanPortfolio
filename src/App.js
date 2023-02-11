@@ -9,29 +9,22 @@ import Project from "./components/Project";
 import Skills from "./components/Skills";
 import Layout from "./Layout";
 
-
-
 function App() {
   return (
     <div className="App">
-      
       <BrowserRouter>
-          <Layout>
-        <Routes path= '/'>
-          <Route index element={<Home/>}/>
-          <Route exact path={"/about"} element={<About/>}/>
-          <Route exact path={"/navbar"} element={<Navbar/>}/>
-          <Route exact path={"/contact"} element={<Contact/>}/>
-          <Route exact path={"/project"} element={<Project/>}/>
-          <Route exact path={"/skills"} element={<Skills/>}/>
-          <Route path="*" element={<NotFound/>} />
-         
-          
-
-        </Routes>
+        <Layout>
+          <Routes >
+            <Route exact  path="/" index element={<Home />} />
+            <Route exact path="about" element={<About />} />
+            <Route exact path="navbar" element={<Navbar />} />
+            <Route exact path="contact" element={<Contact />} />
+            <Route exact path="project" element={<Project />} />
+            <Route exact path="skills" element={<Skills />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </Layout>
       </BrowserRouter>
-        
     </div>
   );
 }

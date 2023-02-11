@@ -1,7 +1,8 @@
 {
-  "homepage": "http://roshangarg.github.io/RoshanPortfolio/",
+  
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage":"https://roshangarg.github.io/RoshanPortfolio/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
