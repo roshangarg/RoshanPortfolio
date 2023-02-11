@@ -1,10 +1,10 @@
 {
-  
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage":"https://roshangarg.github.io/RoshanPortfolio/",
+  "homepage": "https://roshangarg.github.io/RoshanPortfolio/",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@testing-library/jest-dom": "^5.16.5",

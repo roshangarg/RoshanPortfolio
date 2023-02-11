@@ -33,28 +33,7 @@ const Footer = () => {
     <div style={{ background: "blue" }}>
       <Container style={{padding:'2rem'}}>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box>
-              <Typography variant="h5" style={{ marginBottom: "1rem",fontWeight:'700' }}>
-                Contact
-              </Typography>
-            </Box>
-            <Box>
-              <Typography variant="body2" style={{ marginBottom: "1rem" }}>
-                Street : Btm Layout 2nd stage{" "}
-              </Typography>
-              <Typography variant="body2" style={{ marginBottom: "1rem" ,}}>
-                City : Bangalore{" "}
-              </Typography>
-              <Typography variant="body2" style={{ marginBottom: "1rem", }}>
-                State : Karnataka
-              </Typography>
-              <Typography variant="body2" style={{ marginBottom: "1rem" ,}}>
-                Phone no : +91- 8516913819
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} md={4}>
             <Box>
               <Typography variant="h5" style={{ marginBottom: "1rem" ,fontWeight:'700'}}>
                 Menu
@@ -77,6 +56,28 @@ const Footer = () => {
               ))}
             </Box>
           </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <Box>
+              <Typography variant="h5" style={{ marginBottom: "1rem",fontWeight:'700' }}>
+                Contact
+              </Typography>
+            </Box>
+            <Box>
+              <Typography variant="body2" style={{ marginBottom: "1rem" }}>
+                Street : Btm Layout 2nd stage{" "}
+              </Typography>
+              <Typography variant="body2" style={{ marginBottom: "1rem" ,}}>
+                City : Bangalore{" "}
+              </Typography>
+              <Typography variant="body2" style={{ marginBottom: "1rem", }}>
+                State : Karnataka
+              </Typography>
+              <Typography variant="body2" style={{ marginBottom: "1rem" ,}}>
+                Phone no : +91- 8516913819
+              </Typography>
+            </Box>
+          </Grid>
+          
           <Grid item xs={12} sm={6} md={4}>
             <Box>
               <Typography variant="h5" style={{ marginBottom: "1rem" ,fontWeight:'700' }}>
@@ -110,7 +111,7 @@ const Footer = () => {
 
         <Box>
         <Box >
-              <Typography style={{width:'100%',display:'flex', alignContent:'center', alignItems:'center', justifyContent:'center' , marginTop:'1rem'}} variant="h4" >
+              <Typography style={{width:'100%',display:'flex', alignContent:'center', alignItems:'center', justifyContent:'center' , marginTop:'1rem' ,  fontWeight: '700'}} variant="h4">
               &copy; {new Date().getFullYear()} Roshan Garg
               </Typography>
             </Box>

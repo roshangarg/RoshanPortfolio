@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, Avatar, Link, Typography ,CardContent, Grid , Box} from '@material-ui/core';
-import logo  from '../ROSHAN.jpeg'
+import { Card,  Link, Typography ,CardContent, Grid ,} from '@material-ui/core';
+
 
 const useStyles = makeStyles({
   
@@ -12,13 +12,13 @@ const Project = () => {
 
   return (
     <div style={{margin:'2rem 0rem ' }} >
-      <Typography variant='h6' style={{width:'100%' , textAlign:'center' ,margin:'2rem 0rem',background:'blue' }}>
-        My Projects 
-      </Typography>
-      <Box style={{width:'100%' ,display:'flex', textAlign:'center' ,margin:'2rem 0rem',justifyContent:'center'}}>
-
-      <Avatar src={logo} style={{ width:'120px', height:'120px', }}/>
-      </Box>
+      <Typography
+          variant="h3"
+          style={{width:'100%' ,display:'flex', textAlign:'center' ,margin:'2rem 0rem',justifyContent:'center',fontWeight: "900",}}
+        >
+         My Project
+        </Typography>
+      
       <Grid container spacing={3}>
         <Grid style={{width :'50%' }} item sm={6} xs={12}>
         <Link href='https://roshangarg.github.io/muiProject/' target='_blank' style={{textDecoration:'none'}}>
